@@ -14,7 +14,6 @@ btn.addEventListener("click", function () {
     return;
   }
 
-  // show user message
   let userDiv = document.createElement("div");
   userDiv.classList.add("message", "user-message");
   userDiv.innerText = userMsg;
@@ -23,7 +22,7 @@ btn.addEventListener("click", function () {
   input.value = "";
   chatArea.scrollTop = chatArea.scrollHeight;
 
-  // custom reply
+
   if (userMsg.toLowerCase() === "who built you") {
     let botDiv = document.createElement("div");
     botDiv.classList.add("message", "bot-message");
@@ -33,7 +32,7 @@ btn.addEventListener("click", function () {
     return;
   }
 
-  // Gemini API call
+  
   fetch(API_URL, {
     method: "POST",
     headers: {
