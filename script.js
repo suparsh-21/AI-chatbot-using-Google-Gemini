@@ -2,7 +2,7 @@ let btn = document.querySelector("#sendButton");
 let input = document.querySelector("#userInput");
 let chatArea = document.querySelector("#chatArea");
 
-const API_KEY = "AIzaSyCHiV0EEYRsIQ9VApXZ84c8iGq6oUTQPGU";
+const API_KEY = "AIzaSyAlb9Ck9akeRsx_F409A1MAnE6E3C-zXWc";
 
 const API_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=" + API_KEY;
